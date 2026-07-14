@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tdem.milesheetcreator.MainController">
+   <children>
+      <Label text="Mileage Exception Tool" />
+      <HBox prefHeight="35.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label text="Input File" />
+            <TextField fx:id="inputFileField" />
+            <Button mnemonicParsing="false" onAction="#handleInputBrowse" text="Browse" />
+         </children>
+      </HBox>
+      <HBox prefHeight="34.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label text="Save Location:" />
+            <TextField fx:id="outputFileField" />
+            <Button mnemonicParsing="false" onAction="#handleOutputBrowse" text="Browse" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="97.0" prefHeight="47.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label text="Number of Cars" />
+            <TextField fx:id="carCountField" />
+         </children>
+      </HBox>
+      <HBox prefHeight="34.0" prefWidth="600.0">
+         <children>
+            <Label text="Exception Categories" />
+            <TextField fx:id="exceptionsField" />
+         </children>
+      </HBox>
+      <HBox prefHeight="26.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <CheckBox fx:id="secondTransferCheckBox" mnemonicParsing="false" text="Second Transfer of the Month" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="178.0" prefHeight="26.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <CheckBox fx:id="openWhenFinishedCheckBox" mnemonicParsing="false" selected="true" text="Open Report When Finished" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#handleGenerate" text="Generate Exception Report" />
+      <Label fx:id="statusLabel" text="Ready" />
+      <TextArea fx:id="statusArea" editable="false" prefHeight="150.0" prefWidth="500.0" wrapText="true" />
+   </children>
+</VBox>

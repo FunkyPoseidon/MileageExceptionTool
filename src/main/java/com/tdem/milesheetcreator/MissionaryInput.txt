@@ -1,0 +1,51 @@
+Allen Zone,Exchange,A' Allen 1 Secretaries,575,"Sister Cassidy Jane Dalton - Can Drive - Designated Driver, Sister Gabrielle Hannah Bennett - Cannot Drive, Sister Jocelyn Xui Flammer - Can Drive",Car
+Allen Zone,Exchange,A' Allen 6 🚴,600,"Elder Joshua Earnest Morrison - Can Drive - Designated Driver, Elder Spencer Mafileo Evans - Can Drive",Car
+Allen Zone,Stacy,A' Allen 2,2000,"Elder James Joshua Cummings - Can Drive - Designated Driver, Elder Owen Barco Edginton - Can Drive",Car
+Allen Zone,Stacy,A' Fairview,1150,"Sister Hailey Ann Hatch - Can Drive - Designated Driver, Sister Hannah Kaileigh Johnson - Cannot Drive",Car
+Allen Zone,Stacy,A' Princeton,1400,"Elder Forrest Nathan Philpot - Cannot Drive, Elder Gordon Taylor Earl - Can Drive - Designated Driver",Car
+Allen Zone,Sycamore Spanish,A' Farmersville SP Group,1500,"Elder Gus Ward Brinkerhoff - Cannot Drive, Elder Preston Aldon Braegger - Can Drive - Designated Driver",Car
+Allen Zone,Sycamore Spanish,A' Princeton SP Group,1000,"Elder Chandler Nathan Barnette - Can Drive - Designated Driver, Elder Conner Alden Cook - Cannot Drive",Car
+Gilmer 1 Zone,Fergusen,G' Mt Pleasant,3100,"Elder Aaron Bruce Davis - Can Drive - Designated Driver, Elder Tayten Robert Day - Can Drive",Car
+Gilmer 1 Zone,Goode,G' Gilmer 1,1400,Sister Marie Eva Sargent - Can Drive,Car
+Gilmer 1 Zone,Goode,G' Q'man Mineola,1800,"Elder Spencer Neil Anderson - Can Drive - Designated Driver, Elder William Grant Davis - Can Drive",Car
+Gilmer 1 Zone,Pine,G' Gilmer 2,1200,Sister Alexa Shea Ivie - Can Drive - Designated Driver,Car
+Gilmer 1 Zone,Pine,G' Gilmer 4,850,"Elder Adam Michael Dennis - Can Drive - Designated Driver, Elder Nathan Alma Neff - Can Drive",Car
+Gilmer 2 Zone,Lincoln,G' Hugo,1900,"Elder Andrew Durland Carney - Can Drive - Designated Driver, Elder Henry Stewart Bohon - Can Drive",Car
+Gilmer 2 Zone,Lincoln,G' Idabel DeQueen,1400,"Elder Drake Miles Carroll - Can Drive - Designated Driver, Elder Ivan Delos Beutler - Cannot Drive",Car
+Gilmer 2 Zone,Pine Mill,G' Paris,1500,"Elder Porter Michael Lawler - Can Drive, Elder Zachary William Andersen - Can Drive - Designated Driver",Car
+Gilmer 2 Zone,Pine Mill,G' Sulphur Springs,1750,"Sister Anna Lynn Rhinehart - Can Drive - Designated Driver, Sister Brooklin  Ferre - Can Drive",Car
+Gilmer 2 Zone,Pine Mill Spanish,G' Idabel DeQueen SP-EN,1900,"Elder Brady Glenn McLeod - Can Drive - Designated Driver, Elder Thomas Kent Sherwood - Can Drive",Car
+Gilmer 2 Zone,Pine Mill Spanish,G' Paris SP-EN,1450,"Sister Lindsay Kate Trythall - Can Drive - Designated Driver, Sister Makenna Lynn Bowman - Cannot Drive",Car
+Gilmer 2 Zone,Pine Mill Spanish,G' S' Springs SP-EN,1500,"Elder Braden Burke Taylor - Cannot Drive, Elder Damon Scott Pyles - Can Drive - Designated Driver",Car
+Heath Zone,Farm Market,H' Heath,0,Elder Cannon Eric Montgomery - Can Drive,Car
+Heath Zone,Farm Market,"H' Rockwall 2, Heath",1500,"Elder Justin Spencer Sass - Can Drive - Designated Driver, Elder Miles Nathanael Colby - Cannot Drive",Car
+Heath Zone,Farm Market,H' Rockwall YSA,1100,"Sister Madison Monroe Boyer - Can Drive - Designated Driver, Sister Olive Amy Ashcraft - Cannot Drive",Car
+Heath Zone,Farm Market,H' Royse City 2,1000,"Sister Abby Rose Romberg - Can Drive - Designated Driver, Sister Athena  Kennington - Can Drive",Car
+Heath Zone,Garner,H' Rockwall 1,700,"Sister Samantha Jane Chapin - Can Drive - Designated Driver, Sister Sophia Isabella Gray - Cannot Drive",Car
+Heath Zone,Garner,H' Rowlett 1 🚴*,0,"Elder Dallin Matthew Pierce - Can Drive - Designated Driver, Elder Vaughn Michael Bush - Cannot Drive",Car
+Heath Zone,Garner,H' Rowlett 2 🚗#,850,"Elder Ethan Joseph Forbes - Can Drive - Designated Driver, Elder Jonathan Joseph Gilmore - Can Drive",Car
+Heath Zone,Garner Spanish,H' Rowlett 3NE SP,1500,"Sister Jocelyn Ruby Bentley - Cannot Drive, Sister Kelsey Ann Dearden - Cannot Drive - Designated Driver, Sister Sadie Rebecca Davis - Can Drive",Car
+Heath Zone,Garner Spanish,H' Rowlett 3NW SP 🚗*,800,"Elder Christian Alejandro Luarca - Cannot Drive, Elder Dustin Ward Powell - Can Drive - Designated Driver",Car
+Heath Zone,Garner Spanish,H' Rowlett 3SE SP,1400,"Elder Linkoln Daniel Bennett - Can Drive - Designated Driver, Elder Porter Emery Kraft - Can Drive",Car
+Heath Zone,Garner Spanish,H' Rowlett 3SW SP 🚴#,0,"Elder Joshua Jewell Krum - Cannot Drive, Elder Zachary James Thompson - Can Drive",Car
+Heath Zone,Utah,H' Greenville 1,1400,"Sister Calla Jae Beykirch - Cannot Drive, Sister Mara  Lewis - Can Drive - Designated Driver",Car
+Heath Zone,Utah,H' Greenville 3 Commerce,1500,"Sister Avery Jo Nickle - Can Drive - Designated Driver, Sister Piper Melinda Benson - Cannot Drive",Car
+Heath Zone,Utah,H' Greenville 3S,1200,"Elder Charles Matthew Huber - Cannot Drive, Elder Joseph Spencer Allen - Can Drive - Designated Driver",Car
+Heath Zone,Utah,H' Royse City 1,1500,"Sister Claire Alexa Jensen - Cannot Drive, Sister Katelyn Jessica Reeves - Can Drive - Designated Driver",Car
+Heath Zone,Utah Spanish,H' Greenville 2S SP,1400,"Sister Milka Valeria Tapia Aguirre - Cannot Drive, Sister Zara Jayne Broadhead - Can Drive - Designated Driver",Car
+Heath Zone,Utah Spanish,H' Greenville 2W SP,1150,"Elder Gordon Henry Geddes - Cannot Drive, Elder Tyler Dane Jorgensen - Can Drive - Designated Driver",Car
+Plano Zone,Legacy,P' Plano 5 Ancient China,1250,"Elder Isaac Scott Marz - Can Drive, Elder Samuel Brent Romney - Can Drive - Designated Driver",Car
+Plano Zone,Legacy,P' Plano 5 Modern China,1500,"Elder Landon Yu-Jie Carson - Cannot Drive, Elder Matthew Aaron Sorensen - Can Drive - Designated Driver",Car
+Plano Zone,Los Rios,P' Plano 10 🚴,600,"Elder Michael Ryan Anglesey - Cannot Drive, Elder Zachary Ray McDowell - Can Drive - Designated Driver",Car
+Plano Zone,Los Rios,P' Plano 7,1200,"Elder Cole Dixon Sonntag - Can Drive - Designated Driver, Elder Richard Trey Christensen - Can Drive",Car
+Plano Zone,Roundrock Spanish,P' Plano 2E SP,800,"Sister Madeline Jeanne Woolstenhulme - Can Drive - Designated Driver, Sister Melanie Isabel Chavez - Can Drive",Car
+Plano Zone,Roundrock Spanish,P' Plano 2W SP,900,"Elder Coen Rhett Maxwell - Cannot Drive, Elder Ethan Cade Hampton - Can Drive - Designated Driver",Car
+Richardson Zone,Bowser Spanish,R' Garland 5E SP,1250,"Sister Camila Lambraño Meza - Can Drive, Sister Maggie Ann Morris - Can Drive - Designated Driver",Car
+Richardson Zone,Bowser Spanish,R' Garland 5N SP,700,"Elder Jason Alexander Peña - Can Drive - Designated Driver, Elder Miguel  Duran - Cannot Drive",Car
+Richardson Zone,Bowser Spanish,R' Garland 5W SP,825,"Elder Decker Blaise Kauer - Can Drive - Designated Driver, Elder Juzion Eddie Taugata Finai - Can Drive",Car
+Richardson Zone,Garland,R' Sachse,1100,"Elder Braydon Collin Street - Can Drive - Designated Driver, Elder Ryker Amadeus Duersch - Can Drive",Car
+Richardson Zone,Meandering,R' D1 YSA,1200,"Sister Maelina Sivao Betham - Can Drive - Designated Driver, Sister Shaianne Marie Barlow - Cannot Drive, Sister Shelby Marcia Penrod - Cannot Drive",Car
+Richardson Zone,Meandering,R' D1 YSA (UTD),1450,"Elder Tate L. Draper - Cannot Drive, Elder Ty Joseph Parrish - Can Drive - Designated Driver",Car
+Richardson Zone,Meandering,R' Meandering Way W,650,"Sister Drew Anne Palmer - Can Drive - Designated Driver, Sister Isabella Ada Madsen - Cannot Drive, Sister Jessica Louise Lauritzen - Can Drive",Car
+Richardson Zone,Sanden,R' Nevada,1150,"Elder Broden Michael Kemp - Can Drive, Elder Tyler Andrew Kitchen - Can Drive - Designated Driver",Car
+Richardson Zone,Sanden,R' Wylie 1,600,"Elder Carson Eric Reynolds - Cannot Drive, Elder Foxton J. Doxey - Can Drive - Designated Driver",Car
