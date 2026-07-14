@@ -1,0 +1,39 @@
+name: Build Mileage Exception Tool
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-windows:
+
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Build Maven project
+        run: mvn clean package
+
+      - name: Create Windows EXE
+        run: |
+          jpackage `
+          --name "Mileage Exception Tool" `
+          --input target `
+          --main-jar MilesSheetCreator-1.0-SNAPSHOT.jar `
+          --main-class com.tdem.milesheetcreator.MainApplication `
+          --type exe
+
+      - name: Upload installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mileage Exception Tool Windows
+          path: "*.exe"
