@@ -105,7 +105,7 @@
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>com.tdem.milesheetcreator.MainApplication</mainClass>
+                  <mainClass>com.tdem.milesheetcreator.Launcher</mainClass>
                 </transformer>
               </transformers>
             </configuration>

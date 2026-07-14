@@ -7,7 +7,6 @@ on:
 
 jobs:
   build-windows:
-
     runs-on: windows-latest
 
     steps:
@@ -23,32 +22,29 @@ jobs:
       - name: Build Maven project
         run: mvn clean package
 
+      - name: Download JavaFX SDK
+        shell: powershell
+        run: |
+          Invoke-WebRequest `
+            -Uri "https://download2.gluonhq.com/openjfx/21.0.7/openjfx-21.0.7_windows-x64_bin-sdk.zip" `
+            -OutFile "javafx.zip"
+
+          Expand-Archive javafx.zip .
+
       - name: Create Windows EXE
+        shell: powershell
         run: |
           jpackage `
-          --name "Mileage Exception Tool" `
-          --input target `
-          --main-jar MilesSheetCreator-1.0-SNAPSHOT.jar `
-          --main-class com.tdem.milesheetcreator.MainApplication `
-          --type exe
+            --name "Mileage Exception Tool" `
+            --input target `
+            --main-jar MilesSheetCreator-1.0-SNAPSHOT.jar `
+            --main-class com.tdem.milesheetcreator.MainApplication `
+            --module-path "javafx-sdk-21.0.7\lib" `
+            --add-modules javafx.controls,javafx.fxml `
+            --type exe
 
       - name: Upload installer
         uses: actions/upload-artifact@v4
         with:
           name: Mileage Exception Tool Windows
           path: "*.exe"
-- name: Download JavaFX
-  run: |
-    curl -L -o javafx.zip https://download2.gluonhq.com/openjfx/21.0.7/openjfx-21.0.7_windows-x64_bin-sdk.zip
-    tar -xf javafx.zip
-
-- name: Create Windows EXE
-  run: |
-    jpackage `
-    --name "Mileage Exception Tool" `
-    --input target `
-    --main-jar MilesSheetCreator-1.0-SNAPSHOT.jar `
-    --main-class com.tdem.milesheetcreator.MainApplication `
-    --type exe `
-    --module-path javafx-sdk-21.0.7/lib `
-    --add-modules javafx.controls,javafx.fxml
