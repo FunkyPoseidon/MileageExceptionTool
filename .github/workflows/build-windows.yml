@@ -25,12 +25,18 @@ jobs:
           java-version: '21'
           distribution: temurin
 
+      - name: Show target folder
+        shell: powershell
+        run: |
+          Get-ChildItem target -Recurse
+
       - name: Build Jar
         run: mvn clean package
 
       - name: Check build output
+        shell: powershell
         run: |
-          dir target
+          Get-ChildItem target
 
       - name: Download JavaFX
         run: |
