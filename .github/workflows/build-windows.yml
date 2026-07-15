@@ -42,11 +42,10 @@ jobs:
           jpackage `
             --name "Mileage Exception Tool" `
             --input target `
-            --main-jar MilesSheetCreator-1.0.jar `
+            --main-jar MilesSheetCreator-1.0-SNAPSHOT.jar `
             --main-class com.tdem.milesheetcreator.Launcher `
             --type exe `
-            --module-path javafx-sdk-21.0.7/lib `
-            --add-modules javafx.controls,javafx.fxml `
+            --runtime-image "$env:JAVA_HOME" `
             --win-menu `
             --win-shortcut `
             --icon car.ico
@@ -57,3 +56,7 @@ jobs:
         with:
           name: Mileage Exception Tool Windows
           path: "*.exe"
+
+      - name: Check build output
+        run: |
+          dir target
