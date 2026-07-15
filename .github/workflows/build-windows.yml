@@ -25,16 +25,25 @@ jobs:
           java-version: '21'
           distribution: temurin
 
-
       - name: Build Jar
         run: mvn clean package
 
+      - name: Check build output
+        run: |
+          dir target
 
       - name: Download JavaFX
         run: |
           curl -L -o javafx.zip https://download2.gluonhq.com/openjfx/21.0.7/openjfx-21.0.7_windows-x64_bin-sdk.zip
           tar -xf javafx.zip
 
+      - name: Create Runtime Image
+        shell: powershell
+        run: |
+          jlink `
+            --module-path "$env:JAVA_HOME\jmods;javafx-sdk-21.0.7\lib" `
+            --add-modules java.base,java.desktop,java.logging,java.xml,jdk.unsupported,javafx.controls,javafx.fxml `
+            --output runtime
 
       - name: Create Installer
         shell: powershell
@@ -45,7 +54,7 @@ jobs:
             --main-jar MilesSheetCreator-1.0-SNAPSHOT.jar `
             --main-class com.tdem.milesheetcreator.Launcher `
             --type exe `
-            --runtime-image "$env:JAVA_HOME" `
+            --runtime-image runtime `
             --win-menu `
             --win-shortcut `
             --icon car.ico
@@ -56,7 +65,3 @@ jobs:
         with:
           name: Mileage Exception Tool Windows
           path: "*.exe"
-
-      - name: Check build output
-        run: |
-          dir target
