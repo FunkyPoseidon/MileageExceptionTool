@@ -64,10 +64,9 @@ jobs:
           jpackage `
             --name "Mileage Exception Tool" `
             --input target `
-            --main-jar MilesSheetCreator-1.0-SNAPSHOT.jar `
+            --main-jar MilesSheetCreator-1.0.jar `
             --main-class com.tdem.milesheetcreator.Launcher `
             --type exe `
-            --runtime-image runtime `
             --win-menu `
             --win-shortcut `
             --icon car.ico
