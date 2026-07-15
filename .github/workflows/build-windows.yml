@@ -37,17 +37,19 @@ jobs:
 
 
       - name: Create Installer
+        shell: powershell
         run: |
-          jpackage ^
-          --name "Mileage Exception Tool" ^
-          --input target ^
-          --main-jar MilesSheetCreator-1.0.jar ^
-          --main-class com.tdem.milesheetcreator.Launcher ^
-          --type exe ^
-          --module-path javafx-sdk-21.0.7/lib ^
-          --add-modules javafx.controls,javafx.fxml ^
-          --win-menu ^
-          --win-shortcut
+          jpackage `
+            --name "Mileage Exception Tool" `
+            --input target `
+            --main-jar MilesSheetCreator-1.0.jar `
+            --main-class com.tdem.milesheetcreator.Launcher `
+            --type exe `
+            --module-path javafx-sdk-21.0.7/lib `
+            --add-modules javafx.controls,javafx.fxml `
+            --win-menu `
+            --win-shortcut `
+            --icon car.ico
 
 
       - name: Upload
