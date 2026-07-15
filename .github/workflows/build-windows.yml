@@ -36,7 +36,14 @@ jobs:
       - name: Check build output
         shell: powershell
         run: |
-          Get-ChildItem target
+          Write-Host "Current directory:"
+          pwd
+
+          Write-Host "Root files:"
+          Get-ChildItem
+
+          Write-Host "Target folder:"
+          Get-ChildItem target -Recurse
 
       - name: Download JavaFX
         run: |
