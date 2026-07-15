@@ -8,8 +8,8 @@ public class Area {
     String zone;
     int milesAllowed;
     String missionaryName1;
-    String missionaryName2;
-    String missionaryName3;
+    String missionaryName2 = null;
+    String missionaryName3 = null;
 
     public Area(String zone, String district, String areaName, int milesAllowed, String missionaryNames) {
         this.areaName = areaName;
@@ -18,6 +18,7 @@ public class Area {
         this.milesAllowed = milesAllowed;
         String[] names = getMissionaryNames(missionaryNames);
         this.missionaryName1 = names[0];
+
         if(names.length > 1) {
             this.missionaryName2 = names[1];
         }
@@ -37,7 +38,7 @@ public class Area {
         this.missionaryName3 = "";
     }
 
-    private String[] getMissionaryNames(String s) {
+    private static String[] getMissionaryNames(String s) {
         // Example input pieces:
         // "Sister Cassidy Jane Dalton - Can Drive"
         // "Elder John Q Public - Something"
@@ -45,8 +46,9 @@ public class Area {
         stringScanner.useDelimiter(",");
         String[] names = s.split(",");
 
+
         int index = 0;
-        for(String name : names){
+        for(String name : names) {
             String prefix = "";
             String lower = name.toLowerCase();
             if (lower.startsWith("sister ")) prefix = "S.";
@@ -80,6 +82,7 @@ public class Area {
             names[index] = prefix + " " + lastName;
             index++;
         }
+
         return names;
     }
 
@@ -121,6 +124,26 @@ public class Area {
 
     void setMissionaryName2(String missionaryName2) {
         this.missionaryName2 = missionaryName2;
+    }
+
+    String getMissionaryName3() { return  missionaryName3; }
+
+    void setMissionaryName3(String missionaryName3) { this.missionaryName3 = missionaryName3;}
+
+    String getMissionaryNames() {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append(this.missionaryName1);
+
+        if(missionaryName2 != null) {
+            sb.append(",").append(this.missionaryName2);
+        }
+
+        if(missionaryName3 != null) {
+            sb.append(",").append(this.missionaryName3);
+        }
+
+        return sb.toString();
     }
 
     String getDistrict() {return district;}

@@ -105,7 +105,7 @@ public class MilesSheetCreator {
                 createCell(styles, sheet, rowNum, 0, area.getDistrict(), CellStyleType.BORDERED); //district name
                 createCell(styles, sheet, rowNum, 1, area.getName(), CellStyleType.BORDERED); //area name
                 createCell(styles, sheet, rowNum, 2, area.getMilesAllowed(), CellStyleType.BORDERED);
-                createCell(styles, sheet, rowNum, 3, area.getMissionaryName1() + ", " + area.getMissionaryName2(), CellStyleType.BORDERED);
+                createCell(styles, sheet, rowNum, 3, area.getMissionaryNames(), CellStyleType.BORDERED);
 
                 for(int i = 4; i < titles.size(); i++) { //creates blank cells with cell borders
                     createCell(styles, sheet, rowNum, i, "", CellStyleType.BORDERED);

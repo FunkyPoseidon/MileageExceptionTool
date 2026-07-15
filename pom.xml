@@ -7,48 +7,46 @@
 
   <groupId>com.tdem</groupId>
   <artifactId>MilesSheetCreator</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
+
+  <properties>
+    <java.version>21</java.version>
+    <javafx.version>21.0.7</javafx.version>
+  </properties>
 
   <dependencies>
+
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
       <version>5.4.1</version>
     </dependency>
+
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-csv</artifactId>
       <version>1.14.1</version>
     </dependency>
+
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
-      <version>21.0.7</version>
+      <version>${javafx.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-fxml</artifactId>
-      <version>21.0.7</version>
+      <version>${javafx.version}</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.openjfx</groupId>
-      <artifactId>javafx-controls</artifactId>
-      <version>21.0.7</version>
-      <classifier>linux</classifier>
-    </dependency>
-
-    <dependency>
-      <groupId>org.openjfx</groupId>
-      <artifactId>javafx-fxml</artifactId>
-      <version>21.0.7</version>
-      <classifier>linux</classifier>
-    </dependency>
   </dependencies>
+
+
   <build>
     <plugins>
 
+      <!-- Compile Java 21 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -58,42 +56,12 @@
         </configuration>
       </plugin>
 
-      <plugin>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-maven-plugin</artifactId>
-        <version>0.0.8</version>
-        <configuration>
-          <mainClass>com.tdem.milesheetcreator.Launcher</mainClass>
-        </configuration>
-      </plugin>
 
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>3.6.1</version>
-
-        <executions>
-          <execution>
-            <id>copy-dependencies</id>
-            <phase>package</phase>
-            <goals>
-              <goal>copy-dependencies</goal>
-            </goals>
-
-            <configuration>
-              <outputDirectory>
-                ${project.build.directory}/lib
-              </outputDirectory>
-            </configuration>
-
-          </execution>
-        </executions>
-      </plugin>
-
+      <!-- Creates executable jar -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.5.3</version>
+        <version>3.6.0</version>
 
         <executions>
           <execution>
@@ -105,7 +73,9 @@
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>com.tdem.milesheetcreator.Launcher</mainClass>
+                  <mainClass>
+                    com.tdem.milesheetcreator.Launcher
+                  </mainClass>
                 </transformer>
               </transformers>
             </configuration>
@@ -113,6 +83,7 @@
           </execution>
         </executions>
       </plugin>
+
 
     </plugins>
   </build>

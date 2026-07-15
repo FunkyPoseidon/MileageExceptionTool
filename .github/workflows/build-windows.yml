@@ -1,49 +1,56 @@
-name: Build Mileage Exception Tool
+name: Build Windows Installer
 
 on:
   push:
     branches:
       - main
 
+
 jobs:
+
   build-windows:
+
     runs-on: windows-latest
 
+
     steps:
-      - name: Checkout code
+
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Java 21
+
+      - name: Setup Java
         uses: actions/setup-java@v4
         with:
           java-version: '21'
-          distribution: 'temurin'
+          distribution: temurin
 
-      - name: Build Maven project
+
+      - name: Build Jar
         run: mvn clean package
 
-      - name: Download JavaFX SDK
-        shell: powershell
+
+      - name: Download JavaFX
         run: |
-          Invoke-WebRequest `
-            -Uri "https://download2.gluonhq.com/openjfx/21.0.7/openjfx-21.0.7_windows-x64_bin-sdk.zip" `
-            -OutFile "javafx.zip"
+          curl -L -o javafx.zip https://download2.gluonhq.com/openjfx/21.0.7/openjfx-21.0.7_windows-x64_bin-sdk.zip
+          tar -xf javafx.zip
 
-          Expand-Archive javafx.zip .
 
-      - name: Create Windows EXE
-        shell: powershell
+      - name: Create Installer
         run: |
-          jpackage `
-            --name "Mileage Exception Tool" `
-            --input target `
-            --main-jar MilesSheetCreator-1.0-SNAPSHOT.jar `
-            --main-class com.tdem.milesheetcreator.MainApplication `
-            --module-path "javafx-sdk-21.0.7\lib" `
-            --add-modules javafx.controls,javafx.fxml `
-            --type exe
+          jpackage ^
+          --name "Mileage Exception Tool" ^
+          --input target ^
+          --main-jar MilesSheetCreator-1.0.jar ^
+          --main-class com.tdem.milesheetcreator.Launcher ^
+          --type exe ^
+          --module-path javafx-sdk-21.0.7/lib ^
+          --add-modules javafx.controls,javafx.fxml ^
+          --win-menu ^
+          --win-shortcut
 
-      - name: Upload installer
+
+      - name: Upload
         uses: actions/upload-artifact@v4
         with:
           name: Mileage Exception Tool Windows
